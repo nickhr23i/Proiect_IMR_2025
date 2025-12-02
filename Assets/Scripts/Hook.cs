@@ -28,7 +28,7 @@ public class Hook : MonoBehaviour
     {
         if(state==HookState.Empty)
         {
-            if(other.gameObject.name=="Bait")
+            if(other.gameObject.name=="Bait"||other.gameObject.name=="worm(Clone)")
             {
                 hookModel.SetActive(false);
                 baitModel.SetActive(true);
